@@ -122,6 +122,7 @@ psql -h postgres -U airflow -d airflow
 
 Provide password as airflow to login to the psql shell.
 
+![psql_data_query](https://github.com/user-attachments/assets/3f17db91-05f6-4cbe-9fea-b7641331c140)
 
 ### [OPTIONAL] Create postgres table to store aggregated data
 
