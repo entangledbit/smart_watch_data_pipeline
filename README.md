@@ -2,6 +2,7 @@
 **The Smart Watch Data Pipeline project is designed to collect, process, and analyze data from smart watches in a scalable and modular architecture. The system leverages containerized services, event-driven processing, and an orchestration framework to manage tasks. Below is an overview of the system components and how they interact with each other.**
 
 # System Architecture
+![streaming_pipeline](https://github.com/user-attachments/assets/c638b5b7-39c9-4226-92ff-c24ade842956)
 
 ## Key Components
 
