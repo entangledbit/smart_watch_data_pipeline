@@ -59,7 +59,7 @@ cd smart_watch_data_pipeline
 
 ### Set execute permissions on the entrypoint script
 ```
-chmod +x server/entrypoint.sh
+chmod +x script/entrypoint.sh
 ```
 
 ### Build the server image
