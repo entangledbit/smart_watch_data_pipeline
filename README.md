@@ -110,12 +110,22 @@ docker exec -it spark-master spark-submit --packages org.postgresql:postgresql:4
 docker exec -it spark-master spark-submit --packages org.postgresql:postgresql:42.2.5,org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.1 --py-files $lib_path $monthly_agg_spark_job
 ```
 
-### [OPTIONAL] Create postgres table to store aggregated data
+### Querying processed data
+
+Login to postgres docker container using the below commands and use the psql shell for querying tables.
+
 ```
 docker exec -it postgres bash
 
-psql -h postgres -U airflow -d airflow 
+psql -h postgres -U airflow -d airflow
+```
 
+Provide password as airflow to login to the psql shell.
+
+
+### [OPTIONAL] Create postgres table to store aggregated data
+
+```
 CREATE TABLE daily_aggregates (
     user_id VARCHAR,
     event_date DATE,
